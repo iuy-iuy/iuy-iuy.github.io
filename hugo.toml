@@ -1,0 +1,13 @@
+baseURL = 'https://你的GitHub用户名.github.io/'
+languageCode = 'zh-cn'
+title = 'OmAIgo'
+theme = 'PaperMod'
+
+# 防御性设计：让文章永久链接只看 slug，不受文件目录结构影响
+[permalinks]
+  posts = "/p/:slug/"
+
+[params]
+  defaultTheme = "auto" # 自动跟随系统深色/浅色模式
+  ShowReadingTime = true
+  ShowWordCount = true

@@ -11,7 +11,7 @@ theme = 'PaperMod'
   defaultTheme = "auto" # 自动跟随系统深色/浅色模式
   ShowReadingTime = true
   ShowWordCount = true
-
+#v1
 # ==========================================
 # 1. 首页个人名片设定 (Home Info)
 # 这会让首页不再是干瘪的文章列表，而是一个带有欢迎语的个人主页
@@ -27,10 +27,10 @@ theme = 'PaperMod'
 # 添加你的社交链接图标（显示在首页名片下方）
 [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/你的用户名"
-[[params.socialIcons]]
-  name = "twitter"
-  url = "https://twitter.com/你的用户名"
+  url = "https://github.com/iuy-iuy"
+#[[params.socialIcons]]
+#  name = "twitter"
+#  url = "https://twitter.com/你的用户名"
 
 # ==========================================
 # 2. 顶部导航栏 (Navigation Menu)

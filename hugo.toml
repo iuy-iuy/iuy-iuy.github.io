@@ -7,34 +7,36 @@ theme = 'PaperMod'
 [permalinks]
   posts = "/p/:slug/"
 
-[params]
-  defaultTheme = "auto" # 自动跟随系统深色/浅色模式
-  ShowReadingTime = true
-  ShowWordCount = true
-#v1
 # ==========================================
-# 1. 首页个人名片设定 (Home Info)
-# 这会让首页不再是干瘪的文章列表，而是一个带有欢迎语的个人主页
+# 1. 基础参数 (必须且只能出现一次，放在最前面)
+# ==========================================
+[params]
+  defaultTheme = "auto"      # 自动跟随系统深色/浅色模式
+  ShowReadingTime = true     # 显示阅读时间
+  ShowWordCount = true       # 显示字数
+  ShowBreadCrumbs = true     # 显示面包屑导航
+  ShowPostNavLinks = true    # 文章底部显示“上一篇/下一篇”
+  ShowToc = true             # 长文章侧边栏目录
+  TocOpen = false            # 默认折叠目录
+
+# ==========================================
+# 2. 首页个人名片设定 (Home Info)
 # ==========================================
 [params.homeInfoParams]
-  Title = "Hi, 欢迎来到 OmAlgo \U0001F4A1" # 这里的 emoji 可以随便换
+  Title = "Hi, 欢迎来到 OmAIgo 💡" 
   Content = """
   在这里，我致力于拆解前沿科技与复杂系统。
   - 🧠 关注大模型架构、脑机接口与前沿 AI 进展。
   - 🛠️ 追求极简、高信噪比的信息输出。
   """
 
-# 添加你的社交链接图标（显示在首页名片下方）
+# 添加你的社交链接图标
 [[params.socialIcons]]
   name = "github"
   url = "https://github.com/iuy-iuy"
-#[[params.socialIcons]]
-#  name = "twitter"
-#  url = "https://twitter.com/你的用户名"
 
 # ==========================================
-# 2. 顶部导航栏 (Navigation Menu)
-# 建立清晰的信息架构
+# 3. 顶部导航栏 (Navigation Menu)
 # ==========================================
 [[menu.main]]
   name = "🏠 首页"
@@ -55,16 +57,3 @@ theme = 'PaperMod'
   name = "🙋‍♂️ 关于"
   url = "/about/"
   weight = 40
-
-# ==========================================
-# 3. 阅读体验优化 (UI & UX Tweaks)
-# 降低读者的认知负荷
-# ==========================================
-[params]
-  defaultTheme = "auto"      # 自动跟随系统深色模式
-  ShowReadingTime = true     # 显示阅读时间
-  ShowWordCount = true       # 显示字数
-  ShowBreadCrumbs = true     # 显示面包屑导航（例如：首页 > 文章 > 本文）
-  ShowPostNavLinks = true    # 文章底部显示“上一篇/下一篇”
-  ShowToc = true             # 在长文章中自动显示侧边栏目录 (极度推荐)
-  TocOpen = false            # 默认折叠目录，保持页面干净
